@@ -16,7 +16,4 @@ RUN bundle install
 
 COPY . /app
 
-RUN bundle exec rails db:create
-RUN bundle exec rails db:migrate
-
 CMD ["rails", "server", "-b", "0.0.0.0"]
