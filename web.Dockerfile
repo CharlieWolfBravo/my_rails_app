@@ -1,7 +1,5 @@
 FROM ruby:bullseye
 
-USER root
-
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 
 RUN gem install rails
