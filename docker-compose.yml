@@ -2,9 +2,11 @@ version: '3'
 services:
   db:
     container_name: db
-    image: postgres
+    image: postgres:13.11
+    build:
+      dockerfile: db.Dockerfile
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
+      - ./tmp/db/data:/var/lib/postgresql/data
     env_file:
       - .env
     environment:
@@ -14,7 +16,8 @@ services:
       - '5432:5432'
   web:
     container_name: web
-    build: .
+    build:
+      dockerfile: web.Dockerfile
     env_file:
       - .env
     ports:
