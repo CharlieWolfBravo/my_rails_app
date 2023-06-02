@@ -16,6 +16,6 @@ RUN bundle check || bundle install
 
 COPY . /app
 
-# CMD ["/bin/bash", "-c", "sleep infinity"]
+CMD ["/bin/bash", "-c", "sleep infinity"]
 
-CMD ["bundle", "exec", "rails", "s", "-b", "0.0.0.0"]
+# CMD ["bundle", "exec", "rails", "s", "-b", "0.0.0.0"]
