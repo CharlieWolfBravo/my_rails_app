@@ -1,14 +1,21 @@
-<div class="container">
-  <div class="name"><%= @full_name %></div>
-  <div class="paragraph">
-    <p>
-      Welcome to my portfolio website.
-      I have four years of software development experience.
-      This website was made with Rails, jQuery and a couple of stress induced evenings.
-    </p>
-  </div>
-  <div class="alert alert-primary" role="alert">
-    This is a Bootstrap alert!
+<div class="container main-container">
+  <div class="row">
+    <div class="col-lg">
+      <div class="card bg-dark">
+        <p class="card-body paragraph">
+        My Name is Lance.<br>
+        <br>
+        I'm a full stack developer, have been since 2019.<br>
+        Most of my experience is with Ruby on rails and Python, but I've worked with a large number of technologies.<br>
+        The goal of this website it to list and showcase my skills and experience.<br>
+        <br>
+        I hope you enjoy!
+        </p>
+      </div>
+    </div>
+    <div class="col-lg ">
+      <img src="<%= asset_path('chad.jpg') %>" class="img-fluid rounded mx-auto d-block">
+    </div>
   </div>
 </div>
 

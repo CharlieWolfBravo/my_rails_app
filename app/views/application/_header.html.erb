@@ -1,5 +1,13 @@
-<div class="container container-header inline-flex">
-  <div class="name col-4 justify-content-start">Lance Chisholm</div>
-  <div class="col-8"><div>
-  <div class="col-4 justify-content-end" id="nav_container">Navigation</div>
+<div class="container-fluid-md header mt-4 mx-4" id="site_header">
+  <div class="row">
+    <div class="col-md-3 h3" id="title_name"><%= @full_name %></div>
+    <div class="col-md-6"></div>
+    <div class="col-md-3 navbar navbar-dark navbar-expand-sm justify-content-center" id="nav_container">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link">|</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
